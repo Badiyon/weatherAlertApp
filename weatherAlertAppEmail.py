@@ -16,9 +16,6 @@ def sendMail():
 
     message = weatherAlertAppMessage.getMessage()
 
-    print("test")
-
-
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
